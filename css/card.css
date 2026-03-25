@@ -1,6 +1,6 @@
 article {
     height: 300px;
-    background-color: #d52323;
+    background-color: #f9f9f9;
     border-radius: 16px;
     /* Fluxo que estiver sobrando, fica escondido */
     overflow: hidden;
