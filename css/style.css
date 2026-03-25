@@ -1,0 +1,106 @@
+
+/* Importa a fonte Open Sans (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* RESET (limpa as configurações padrão dos navegadores) */
+* {
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+
+    /* Scroll suave */
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #dddddd;
+
+    /* Reset (zera as configurações padrão do navegador) */
+    margin: 0;
+}
+
+/* ===== Barra de Navegação ===== */
+nav {
+    position: fixed;
+    width: 100%;
+    /* Eixo Z cartesiano */
+    z-index: 1000;
+
+    background-color: #000000b6;
+    color: #f9f9f9;
+    padding: 16px 64px;
+
+    /* Separar os elementos, um para cada lado */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav span {
+    color: #949bff;
+}
+
+a {
+    color: #f9f9f9;
+    text-decoration: none;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #949bff;
+}
+
+/* ===== Cabeçalho (banner) ===== */
+header {
+    height: 500px;
+
+    background-image: url("https://cdn.pixabay.com/photo/2016/02/01/00/56/news-1172463_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    /* Alterar cores, brilho */
+    filter: brightness(50%);
+    /* filter: blur(5px); */
+    /* filter: grayscale(0.9); */
+    /* filter: invert(0.9); */
+}
+
+/* ===== Corpo da página ===== */
+main {
+    padding: 16px 64px;
+}
+
+section {
+    min-height: 800px;
+    margin-bottom: 32px;
+    padding-top: 64px;
+
+    /* border: solid 1px blue; */
+}
+
+/* A configuração do Article está no arquivo card.css */
+
+/* ===== Rodapé ===== */
+footer {
+    /* height: 300px; */
+    min-height: 300px;
+    /* max-height: 250px; */
+    background-color: #232323;
+    color: #b3b3b3;
+    padding: 32px 64px;
+    text-align: justify;
+
+    display: grid;
+    /* grid-template-columns: 400px auto 200px; */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 200px 350px auto; */
+    gap: 32px
+}
+
+/* footer div {
+    border: dashed 2px yellow;
+} */
